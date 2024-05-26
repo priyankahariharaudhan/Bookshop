@@ -1,0 +1,42 @@
+.status{
+    margin-left: 250px;
+    align-self: self-end;
+}
+.pagename{
+    background-color: #272727;
+    padding: 20px;
+}
+.hh3{
+    margin: 0;
+    padding: 0;
+}
+
+.search{
+    width: 100%;
+}
+.sform{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.searchinput{
+    padding: 15px;
+    padding-left: 45px;
+    width: 350px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-radius:7px;
+    color: #fff;
+    background-color: #343434;
+}
+.searchicon{
+    position: relative;
+    top: 8px;
+    left: 35px;
+}
+
+.table{
+    color: #fff;
+    margin: 20px 50px;
+}
