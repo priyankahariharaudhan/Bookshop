@@ -3,7 +3,7 @@ import axios from "axios";
 //=============jwt==============
 //decode user token
 export const decode = async (token) =>
-  await axios.post(`http://localhost:8080/api/decode`, { token: token });
+  await axios.post(`https://booksell-0d67.onrender.com/api/decode`, { token: token });
 
 //=============Books==============
 
@@ -16,7 +16,7 @@ export const createBook = async (
   genre,
   count
 ) => {
-  await axios.post(`http://localhost:8080/api/books`, {
+  await axios.post(`https://booksell-0d67.onrender.com/api/books`, {
     bookName: bname,
     authorName: author,
     publisherName: publisher,
@@ -28,7 +28,7 @@ export const createBook = async (
 
 //api to get all book
 export const getAllBook = async () =>
-  await axios.get(`http://localhost:8080/api/books`);
+  await axios.get(`https://booksell-0d67.onrender.com/api/books`);
 
 
 //=============Lend Books==============
@@ -43,7 +43,7 @@ export const lendBook = async (
   pdate,
   ddate
 ) => {
-  await axios.post(`http://localhost:8080/api/lend`, {
+  await axios.post(`https://booksell-0d67.onrender.com/api/lend`, {
     bookName: bname,
     authorName: author,
     publisherName: publisher,
@@ -57,8 +57,8 @@ export const lendBook = async (
 
 //api to get all lend book
 export const getLendBook = async () =>
-  await axios.get(`http://localhost:8080/api/lend`);
+  await axios.get(`https://booksell-0d67.onrender.com/api/lend`);
 
 //api to delete a lended book
 export const deleteLendBook = async (id) =>
-  await axios.delete(`http://localhost:8080/api/lend/${id}`);
+  await axios.delete(`https://booksell-0d67.onrender.com/api/lend/${id}`);

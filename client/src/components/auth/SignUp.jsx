@@ -12,7 +12,7 @@ const SignIn = () => {
     //api signup
     async function registerUser(event) {
         event.preventDefault()
-        const response = await fetch(`https://bookshop-2iww.onrender.com/api/signup`, {
+        const response = await fetch(`https://booksell-0d67.onrender.com/api/signup`, {
             method: `POST`,
             headers: {
                 'Content-Type': 'application/json',
